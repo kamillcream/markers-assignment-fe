@@ -63,7 +63,6 @@
                 id="email"
                 v-model="signupForm.email"
                 type="email"
-                :state="signupForm.email ? !emailError : null"
                 :placeholder="emailError || '이메일을 입력하세요'"
                 @input="clearError('email')"
                 @blur="validateEmail"
@@ -346,6 +345,7 @@
 </template>
 
 <script setup>
+import router from "@/router";
 import { ref, reactive, defineEmits, computed } from "vue";
 
 const emit = defineEmits(["try-register"]);
@@ -496,6 +496,10 @@ const emitFormData = async () => {
     password: signupForm.password,
     name: signupForm.name,
   });
+};
+
+const goToLogin = () => {
+  router.push("/");
 };
 </script>
 

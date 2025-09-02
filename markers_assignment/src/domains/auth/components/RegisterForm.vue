@@ -347,19 +347,6 @@
 
 <script setup>
 import { ref, reactive, defineEmits, computed } from "vue";
-import {
-  BCard,
-  BForm,
-  BFormGroup,
-  BFormInput,
-  BFormInvalidFeedback,
-  BInputGroup,
-  BInputGroupText,
-  BButton,
-  BSpinner,
-  BModal,
-} from "bootstrap-vue-3";
-import { api } from "@/axios";
 
 const emit = defineEmits(["try-register"]);
 

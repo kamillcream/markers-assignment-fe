@@ -115,14 +115,6 @@
           >
             회원가입
           </BButton>
-          <BButton
-            variant="link"
-            size="sm"
-            class="text-primary text-decoration-none"
-            @click="showForgotPassword = true"
-          >
-            비밀번호 재설정
-          </BButton>
         </div>
 
         <!-- 로그인 버튼 -->
